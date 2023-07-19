@@ -1,0 +1,68 @@
+openapi: 3.0.3
+info:
+  title: Exchange Service API
+  description: |-
+    Private service helps you exchange your currencies
+  contact:
+    email: baris@dev.local
+  version: 0.1.0
+tags:
+  - name: health
+    description: Service healthiness
+  - name: private
+    description: Private endpoints
+paths:
+  /_health:
+    get:
+      tags:
+        - health
+      operationId: health
+      responses:
+        '200':
+          description: service is working properly
+        '503':
+          description: service is not working properly
+  /_private/api/v1/{from}/{to}/{amount}:
+    get:
+      tags:
+        - private
+      operationId: exchange
+      parameters:
+        - name: from
+          in: path
+          description: from currency
+          required: true
+          schema:
+            type: string
+        - name: to
+          in: path
+          description: to currency
+          required: true
+          schema:
+            type: string
+        - name: amount
+          in: path
+          description: amount in from currency
+          required: true
+          schema:
+            type: number
+            format: float
+      responses:
+        '200':
+          description: exchange result
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ExchangeResult'
+        '404':
+          description: currency not found
+components:
+  schemas:
+    ExchangeResult:
+      type: object
+      required:
+        - total
+      properties:
+        total:
+          type: number
+          format: float
