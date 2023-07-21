@@ -1,9 +1,9 @@
 package server
 
 import (
+	"exchangeservice/pkg/server/gen"
+	"exchangeservice/pkg/storage"
 	"net/http"
-	"userservice/pkg/server/gen"
-	"userservice/pkg/storage"
 
 	"github.com/labstack/echo/v4"
 	"go.elastic.co/apm/v2"

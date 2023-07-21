@@ -3,10 +3,10 @@
 package main
 
 import (
+	"exchangeservice/pkg/config"
+	"exchangeservice/pkg/server"
+	"exchangeservice/pkg/storage"
 	"os"
-	"userservice/pkg/config"
-	"userservice/pkg/server"
-	"userservice/pkg/storage"
 
 	"go.uber.org/zap"
 )

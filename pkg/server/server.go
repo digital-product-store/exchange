@@ -1,9 +1,9 @@
 package server
 
 import (
+	"exchangeservice/pkg/config"
+	"exchangeservice/pkg/server/gen"
 	"net/http"
-	"userservice/pkg/config"
-	"userservice/pkg/server/gen"
 
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"

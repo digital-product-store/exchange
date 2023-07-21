@@ -32,6 +32,6 @@ services:
         dockerfile: Dockerfile
       image: ads-exchange:latest
       ports:
-        - "8000:8000"
+        - "8002:8000"
       environment:
         - ELASTIC_APM_SERVER_URL=http://apm-server:8200
