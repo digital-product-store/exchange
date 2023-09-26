@@ -7,7 +7,7 @@ require (
 	github.com/deepmap/oapi-codegen v1.15.0
 	github.com/getkin/kin-openapi v0.118.0
 	github.com/labstack/echo/v4 v4.11.1
-	go.elastic.co/apm/module/apmechov4/v2 v2.4.3
+	go.elastic.co/apm/module/apmechov4/v2 v2.4.4
 	go.elastic.co/apm/v2 v2.4.4
 	go.uber.org/zap v1.26.0
 )
@@ -81,7 +81,7 @@ require (
 	github.com/vmihailenco/msgpack/v5 v5.3.5 // indirect
 	github.com/vmihailenco/tagparser/v2 v2.0.0 // indirect
 	github.com/yosssi/ace v0.0.5 // indirect
-	go.elastic.co/apm/module/apmhttp/v2 v2.4.3 // indirect
+	go.elastic.co/apm/module/apmhttp/v2 v2.4.4 // indirect
 	go.elastic.co/fastjson v1.3.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	golang.org/x/arch v0.3.0 // indirect
