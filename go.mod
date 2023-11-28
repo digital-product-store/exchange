@@ -5,7 +5,7 @@ go 1.20
 require (
 	github.com/caarlos0/env/v9 v9.0.0
 	github.com/deepmap/oapi-codegen v1.15.0
-	github.com/getkin/kin-openapi v0.120.0
+	github.com/getkin/kin-openapi v0.121.0
 	github.com/labstack/echo/v4 v4.11.2
 	go.elastic.co/apm/module/apmechov4/v2 v2.4.5
 	go.elastic.co/apm/v2 v2.4.5
